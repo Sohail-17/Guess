@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Word Guess</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+<body>
+    <h1>Word Guess Game</h1>
+    <p>Enter your Guess below:</p>
+    <form action="/wordguess" method="post">
+        <input type="text" name="guess" placeholder="Guess here!">
+        <button type="submit">Submit</button>
+    </form>
+    {% if result %}
+    <p>{{ result }}</p>
+    {% endif %}
+
+    <br>
+    <a href="/">Home</a>
+</body>
+</html>

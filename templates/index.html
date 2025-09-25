@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <title> Welcome Bro! </title>
+</head>
+<body>
+    <h1>Welcome to the Game! ^_^</h1>
+    <p>Choose the game. </p>
+
+    <form action="/npat" method="get">
+        <button type="submit">N.P.A.T</button>
+    </form>
+    <br>
+    <form action="/wordguess" method="get">
+        <button type="submit">Word Guess</button>
+    </form>
+</body>
+</html>
